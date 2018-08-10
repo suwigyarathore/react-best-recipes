@@ -1,6 +1,7 @@
 import App from './component/App'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './styles/index.css'
 
 window.React = React
 

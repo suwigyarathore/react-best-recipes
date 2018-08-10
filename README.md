@@ -12,4 +12,5 @@
 * Passing function inside child components
 * Exploiting State API
 * Using babel-preset-stage-0 for replacing ugly bind
+* Setup postcss and basscss
 
