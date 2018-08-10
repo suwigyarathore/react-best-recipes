@@ -4,3 +4,4 @@
 
 * Setting up babel
 * Setting up webpack
+* Setting up dev env with webpack dev server and prod webpack config 
