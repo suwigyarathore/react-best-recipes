@@ -1,24 +1,33 @@
 const RecipeDetail = (props) => {
-  return (
+  return props.recipe ? (
     <div style={props.style}>
-      <h2>Gulab Jamun</h2>
-      <img src="https://www.ndtv.com/cooks/images/gulab%20jamun%20new.jpg"></img>
+      <h2>{props.recipe.name}</h2>
+      <img src={props.recipe.image}></img>
       <div>
-        <span>Dessert</span>
-        <span>1200 cal</span>
+        <span>{props.recipe.category}</span>
+        <span>{props.recipe.calories}</span>
       </div>
       <h3>Ingrediends</h3>
       <ul>
-        <li>Sugar</li>
-        <li>Dough</li>
+        {props.recipe.ingredients.map((ingredient, i) => (
+          <li key={i}>
+            {ingredient}
+          </li>
+        ))}
       </ul>
       <h3>Steps</h3>
       <ol>
-        <li>Mix it well</li>
-        <li>Cook</li>
+        {props.recipe.steps.map((step, i) => (
+          <li key={i}>
+            {step}
+          </li>
+        ))}
       </ol>
     </div>
-  );
+  ) :
+    (<p style={props.style}>
+      Please select recipe to see detail
+  </p>);
 }
 
 export default RecipeDetail;

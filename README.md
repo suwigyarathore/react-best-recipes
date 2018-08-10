@@ -8,3 +8,8 @@
 * Setting up babel-loader for react and writing functional component
 * Imporing assets by file loader
 * Using fetch to make async calls
+* Complex communication between components
+* Passing function inside child components
+* Exploiting State API
+* Using babel-preset-stage-0 for replacing ugly bind
+
