@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Logo from './static/images/react-icon.png'
 
-class App extends Component {
-
-  render () {
-    return (
-      <h1>Hello react!</h1>
-    )
-  }
-
-}
+const App = (props) => (
+  <div>
+    <h1>Hello react!</h1>
+    <img src={Logo} />
+  </div>
+)
 
 export default App
