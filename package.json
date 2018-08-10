@@ -1,0 +1,12 @@
+{
+  "name": "react-recipes",
+  "version": "1.0.0",
+  "description": "This project shows best react recipes that can be followed in your react project ",
+  "main": "index.js",
+  "repository": "https://github.com/suwigyarathore/react-best-recipes.git",
+  "author": "suwigyarathore <Suwi.Rathore@klm.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index"
+  }
+}
