@@ -18,4 +18,5 @@
 * Setting up Prettier for rewriting code better
 * Setting up githook for linter and prettier
 * Setting up basic routes with browser router
+* Adding route switch and not found route
 
