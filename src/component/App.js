@@ -18,11 +18,11 @@ class App extends Component {
       .then(recipes => this.setState({ recipes }));
   }
 
-  onRecipeClick = (id) => {
+  onRecipeClick = id => {
     fetch(`${process.env.API_URL}/v1/recipes/${id}`)
       .then(res => res.json())
       .then(currentRecipe => this.setState({ currentRecipe }));
-  }
+  };
 
   render() {
     const { recipes, currentRecipe } = this.state;

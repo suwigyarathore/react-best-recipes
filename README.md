@@ -15,4 +15,5 @@
 * Setup postcss and basscss
 * Apply and adapt tp basscss style gide to our site
 * Setting up linter with ESlint using airbnb standards
+* Setting up Prettier for rewriting code better
 
