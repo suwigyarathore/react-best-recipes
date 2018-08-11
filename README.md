@@ -13,4 +13,5 @@
 * Exploiting State API
 * Using babel-preset-stage-0 for replacing ugly bind
 * Setup postcss and basscss
+* Apply and adapt tp basscss style gide to our site
 

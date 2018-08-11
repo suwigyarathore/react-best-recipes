@@ -28,13 +28,14 @@ export class App extends Component {
     const { recipes, currentRecipe } = this.state
     return (<div>
       <Header />
-      <main style={{ display: 'flex' }}>
+      <main className="px4 flex">
         <RecipeList
           recipes={recipes}
           style={{ flex: 3 }}
           onClick={this.onRecipeClick}
         />
         <RecipeDetail
+          className="ml4"
           recipe={currentRecipe}
           style={{ flex: 5 }} />
       </main>
