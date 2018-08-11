@@ -1,6 +1,6 @@
 # react-best-recipes
 
-## Concepts Explored
+## Good Recipes Followed
 
 * Setting up babel
 * Setting up webpack
@@ -22,4 +22,9 @@
 * Marking Recipes as favorite
 * Sharing state between 2 components
 * Getting parameters from URL
+
+## Unit Testing
+
+* Jest Configured
+
 
