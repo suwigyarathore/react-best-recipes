@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import RecipeList from './RecipeList';
 import RecipeDetail from './RecipeDetail';
 
@@ -6,16 +7,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      recipes: [],
       currentRecipe: null,
-      favorites: [],
     };
-  }
-
-  componentDidMount() {
-    fetch(`${process.env.API_URL}/v1/recipes`)
-      .then(res => res.json())
-      .then(recipes => this.setState({ recipes }));
   }
 
   onRecipeClick = id => {
@@ -24,29 +17,21 @@ class Home extends Component {
       .then(currentRecipe => this.setState({ currentRecipe }));
   };
 
-  toggeleFavorite = id => {
-    this.setState(({ favorites, ...state }) => {
-      const idx = favorites.indexOf(id);
-
-      if (idx !== -1) {
-        return { ...state, favorites: favorites.filter(fid => fid !== id) };
-      }
-      return { ...state, favorites: [...favorites, id] };
-    });
-  };
-
   render() {
-    const { recipes, favorites, currentRecipe } = this.state;
+    const { recipes, favorites } = this.props;
+    const { currentRecipe } = this.state;
     return (
       <div>
         <main className="px4 flex">
-          <RecipeList
-            recipes={recipes}
-            favorites={favorites}
-            style={{ flex: 3 }}
-            onClick={this.onRecipeClick}
-            onFavorited={this.toggeleFavorite}
-          />
+          <div style={{ flex: 3 }}>
+            <h2 className="h2">Recipes</h2>
+            <RecipeList
+              recipes={recipes}
+              favorites={favorites}
+              onClick={this.onRecipeClick}
+              onFavorited={this.props.toggeleFavorite}
+            />
+          </div>
           <RecipeDetail
             className="ml4"
             recipe={currentRecipe}
@@ -57,5 +42,11 @@ class Home extends Component {
     );
   }
 }
+
+Home.propTypes = {
+  toggeleFavorite: PropTypes.func,
+  recipes: PropTypes.array,
+  favorites: PropTypes.array,
+};
 
 export default Home;
