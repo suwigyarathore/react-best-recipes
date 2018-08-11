@@ -17,4 +17,5 @@
 * Setting up linter with ESlint using airbnb standards
 * Setting up Prettier for rewriting code better
 * Setting up githook for linter and prettier
+* Setting up basic routes with browser router
 
