@@ -21,4 +21,5 @@
 * Adding route switch and not found route
 * Marking Recipes as favorite
 * Sharing state between 2 components
+* Getting parameters from URL
 
