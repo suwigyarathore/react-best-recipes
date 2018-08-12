@@ -1,4 +1,9 @@
 # react-best-recipes
+This project depicts various best react recipes that if you follow in enterprise level React projects
+it will be easy to maintain coding standards, testing, CSS scaling, pretty code etc
+
+## Application Screenshots
+![Screenshot](./screenshot.png "Title")
 
 ## Good Recipes Followed
 
@@ -29,4 +34,9 @@
 * Snapshot testing with jest
 * Adding static assets mocks
 
+## Complex Scenario Testing
+* Using Enzyme to test complex scenarios like when DOM clicked
+* Uning mount renderer for enzyme for full rendering
+* Simulating clicks and verifying clicks
+* Finding DOM elements using find & first api of enzyme
 

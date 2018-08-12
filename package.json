@@ -36,6 +36,8 @@
     "basscss-colors": "^2.2.0",
     "css-loader": "^1.0.0",
     "dotenv-webpack": "^1.5.7",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
@@ -65,7 +67,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router-dom": "^4.3.1",
-    "whatwg-fetch": "^2.0.4",
-    "react-test-renderer": "^16.4.2"
+    "react-test-renderer": "^16.4.2",
+    "whatwg-fetch": "^2.0.4"
   }
 }
