@@ -3,7 +3,7 @@ This project depicts various best react recipes that if you follow in enterprise
 it will be easy to maintain coding standards, testing, CSS scaling, pretty code etc
 
 ## Application Screenshots
-![Screenshot](./screenshot.png "Title")
+![Screenshot](./ScreenShot.png "Title")
 
 ## Good Recipes Followed
 
