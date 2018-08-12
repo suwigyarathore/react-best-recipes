@@ -26,5 +26,6 @@
 ## Unit Testing
 
 * Jest Configured
+* Snapshot testing with jest
 
 

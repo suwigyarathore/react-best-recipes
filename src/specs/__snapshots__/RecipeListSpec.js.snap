@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecipeList/> Should not break when no recipes passed 1`] = `
+<ul
+  className="list-reset"
+/>
+`;
+
+exports[`<RecipeList/> Should render favorite state correctly 1`] = `
+<ul
+  className="list-reset"
+>
+  <li
+    className="py2 border-bottom border-bottom-dashed pointer"
+    onClick={[Function]}
+  >
+    <span
+      aria-label="favorite"
+      className="mx1"
+      onClick={[Function]}
+      role="presentation"
+    >
+      ✅
+    </span>
+    <span>
+      Test Recipe
+    </span>
+    <span>
+      Test Category
+    </span>
+  </li>
+  <li
+    className="py2 border-bottom border-bottom-dashed pointer"
+    onClick={[Function]}
+  >
+    <span
+      aria-label="favorite"
+      className="mx1"
+      onClick={[Function]}
+      role="presentation"
+    >
+      ⬜️
+    </span>
+    <span>
+      Test Recipe 2
+    </span>
+    <span>
+      Test Category 2
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`<RecipeList/> Should render when recipes passed 1`] = `
+<ul
+  className="list-reset"
+>
+  <li
+    className="py2 border-bottom border-bottom-dashed pointer"
+    onClick={[Function]}
+  >
+    <span
+      aria-label="favorite"
+      className="mx1"
+      onClick={[Function]}
+      role="presentation"
+    >
+      ⬜️
+    </span>
+    <span>
+      Test Recipe
+    </span>
+    <span>
+      Test Category
+    </span>
+  </li>
+  <li
+    className="py2 border-bottom border-bottom-dashed pointer"
+    onClick={[Function]}
+  >
+    <span
+      aria-label="favorite"
+      className="mx1"
+      onClick={[Function]}
+      role="presentation"
+    >
+      ⬜️
+    </span>
+    <span>
+      Test Recipe 2
+    </span>
+    <span>
+      Test Category 2
+    </span>
+  </li>
+</ul>
+`;

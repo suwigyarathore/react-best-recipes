@@ -16,17 +16,21 @@ const RecipeDetail = props =>
         <span>{props.recipe.calories}</span>
       </div>
       <h3>Ingrediends</h3>
-      <ul>
-        {props.recipe.ingredients.map(ingredient => (
-          <li key={ingredient}>{ingredient}</li>
-        ))}
-      </ul>
+      {props.recipe.ingredients && (
+        <ul>
+          {props.recipe.ingredients.map(ingredient => (
+            <li key={ingredient}>{ingredient}</li>
+          ))}
+        </ul>
+      )}
       <h3>Steps</h3>
-      <ol>
-        {props.recipe.steps.map(step => (
-          <li key={step}>{step}</li>
-        ))}
-      </ol>
+      {props.recipe.steps && (
+        <ol>
+          {props.recipe.steps.map(step => (
+            <li key={step}>{step}</li>
+          ))}
+        </ol>
+      )}
       <Link to={`/recipe/${props.recipe.id}`}>See More</Link>
     </div>
   ) : (

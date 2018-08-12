@@ -15,6 +15,11 @@ const RecipeList = ({ style, recipes, favorites, ...props }) => (
   </ul>
 );
 
+RecipeList.defaultProps = {
+  recipes: [],
+  favorites: [],
+};
+
 RecipeList.propTypes = {
   recipes: PropTypes.array,
   style: PropTypes.object,
