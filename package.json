@@ -12,8 +12,8 @@
     "lint": "eslint ./src",
     "precommit": "lint-staged",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "test:update": "jest -u"
+    "test:w": "jest --watch",
+    "test:u": "jest -u"
   },
   "lint-staged": {
     "*.js": [

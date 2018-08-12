@@ -27,5 +27,6 @@
 
 * Jest Configured
 * Snapshot testing with jest
+* Adding static assets mocks
 
 
